@@ -1,0 +1,25 @@
+{
+  "name": "challenge-follow-api",
+  "version": "1.0.0",
+  "description": "API challenge to follow/unfollow users",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/givery-technology/challenge-follow-api.git"
+  },
+  "author": "Givery Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/givery-technology/challenge-follow-api/issues"
+  },
+  "homepage": "https://github.com/givery-technology/challenge-follow-api#readme",
+  "devDependencies": {
+    "api-first-spec": "^0.2.9",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "sqlite3": "^3.1.1"
+  }
+}
