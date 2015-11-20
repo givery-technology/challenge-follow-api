@@ -38,7 +38,7 @@ var API = spec.define({
             "result": {
                 "required": true
             },
-            "users": {
+            "users.*": {
                 "required": true
             }
         }
@@ -54,6 +54,17 @@ describe("show", function () {
         }).badRequest(function (data, res) {
             assert.equal(data.code, 400);
             assert.equal(data.result, false);
+            done();
+        });
+    });
+
+    it("success", function (done) {
+        host.api(API).params({
+            "userId": 3
+        }).success(function (data, res) {
+            assert.equal(data.code, 200);
+            assert.equal(data.result, true);
+            assert.equal(data.count, 0);
             done();
         });
     });

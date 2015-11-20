@@ -7,7 +7,7 @@ var
 
 var API = spec.define({
     "endpoint": "/api/followers/",
-    "method": "POST",
+    "method": "DELETE",
     "request": {
         "contentType": spec.ContentType.URLENCODED,
         "params": {
@@ -41,7 +41,7 @@ var API = spec.define({
     }
 });
 
-describe("follow", function () {
+describe("unfollow", function () {
     var host = spec.host(config.host);
 
     it("Not a follower", function (done) {
