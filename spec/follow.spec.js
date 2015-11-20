@@ -79,8 +79,8 @@ describe("follow", function () {
 
     it("success", function (done) {
         host.api(API).params({
-            "userId": 2,
-            "followId": 3
+            "userId": 4,
+            "followId": 5
         }).success(function (data, res) {
             assert.equal(data.code, 200);
             assert.equal(data.result, true);
