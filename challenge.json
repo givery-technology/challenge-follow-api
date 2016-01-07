@@ -1,0 +1,8 @@
+{
+    "allowNewFile": true,
+    "excludes": [
+        "challenge.json",
+        ".gitignore"
+    ],
+    "test": "mocha spec"
+}
